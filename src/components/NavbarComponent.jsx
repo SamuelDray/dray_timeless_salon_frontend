@@ -11,6 +11,7 @@ const NavbarComponent = () => {
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav">
                     <Link className="nav-link" to="/">Home</Link>
+                    <Link className="nav-link" to="/addservices">Add Services</Link>
                 </div>
 
                 <div className="navbar-nav ms-auto">
