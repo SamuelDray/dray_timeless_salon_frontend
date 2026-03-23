@@ -42,20 +42,20 @@ const GetServiceComponent = () => {
             <h6 className="text-warning">{loading}</h6>
             <h6 className="text-danger">{error}</h6>
 
-            {service.map((product)=>(
+            {service.map((service)=>(
                 <div className="col-md-3 justify-content-center mb-4">
                 <div className="card shadow card-margin">
-                    <img src={img_url+product.product_image} 
+                    <img src={img_url+service.service_image} 
                     alt="mt-4" />
                     <div className="card-body">
-                        <h5 className="mt-2">{product.product_name}</h5>
-                        <p className="text-muted">{product.product_description}</p>
-                        <b className="text-warning">{product.product_cost}</b>
+                        <h5 className="mt-2">{service.service_name}</h5>
+                        <p className="text-muted">{service.service_description}</p>
+                        <b className="text-warning">{service.service_cost}</b>
                         <br /><br />
                         <button 
                         className="btn btn-primary" 
                         onClick={()=>{
-                            navigator('/makepayment', { state: { product }});
+                            navigator('/makepayment', { state: { service }});
                             }}
                             >Purchase Now
                         </button>

@@ -24,7 +24,7 @@ function App() {
 
         <Routes>
           <Route path='/' element={<GetServicesComponent />} />
-          <Route path='/addservices' element={<AddServiceComponent />} />
+          <Route path='/add_service' element={<AddServiceComponent />} />
           <Route path='/signup' element={<SignupComponent />} />
           <Route path='/login' element={<LoginComponent />} />
           <Route path='/makepayment' element={<MpesaPaymentComponent />} />
