@@ -21,7 +21,7 @@ const AddServiceComponent = () => {
         setError("");
 
         try {
-        const service_data = new FormData()
+            const service_data = new FormData()
             service_data.append("service_name", service_name);
             service_data.append("service_cost", service_cost);
             service_data.append("service_category", service_category);
@@ -40,19 +40,19 @@ const AddServiceComponent = () => {
                 setserviceCategory("");
                 setserviceDescription("");
                 setserviceImage("");
-                
+
             }
         } catch (error) {
-             setError(error.message);
+            setError(error.message);
             setLoading("");
         }
 
     };
-    
+
     return (
         <div className="row justify-content-center mt-4">
             <div className="col-md-6 card shadow p-4">
-                <h2>Add service</h2>
+                <center><h2>Add service</h2></center>
                 <h5 className="text-warning">{loading}</h5>
                 <h5 className="text-success">{successful}</h5>
                 <h5 className="text-danger">{error}</h5>
@@ -96,7 +96,7 @@ const AddServiceComponent = () => {
                         onChange={(e) => { setserviceDescription(e.target.value) }}>
                     </textarea><br /><br />
 
-                    <label className="form-label">service Image</label>
+                    <center><label className="form-label">Service Image</label></center>
 
                     <input
                         type="file"
@@ -106,9 +106,9 @@ const AddServiceComponent = () => {
                         onChange={(e) => { setserviceImage(e.target.files[0]) }} />
                     <br /><br />
 
-                    <button className="btn btn-primary">
-                        Add service
-                    </button>
+                    <center><button className="btn btn-primary">
+                        Add Service
+                    </button></center>
                 </form>
             </div>
         </div>

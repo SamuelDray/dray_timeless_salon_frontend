@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const NavbarComponent = () => {
     return (
         <nav className="navbar navbar-expand-lg">
-            <Link className="navbar-brand" to="/">Timeless Salon</Link> 
+            <Link className="navbar-brand" to="/">Timeless Salon</Link>
             <button className="navbar-toggler" data-bs-toggle="Collapse" data-bs-target="#navbarcollapse">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -11,7 +11,7 @@ const NavbarComponent = () => {
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav">
                     <Link className="nav-link" to="/">Home</Link>
-                    <Link className="nav-link" to="/addservices">Add Services</Link>
+                    <Link className="nav-link" to="/add_service">Add Services</Link>
                 </div>
 
                 <div className="navbar-nav ms-auto">
