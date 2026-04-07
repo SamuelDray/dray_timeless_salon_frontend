@@ -81,10 +81,10 @@ const AddServiceComponent = () => {
                         value={service_category}
                         onChange={(e) => { setserviceCategory(e.target.value) }}>
                         <option value="">Select Category</option>
-                        <option value="hair">Hair Styling</option>
-                        <option value="nail">Pedicure</option>
-                        <option value="nails">Manicure</option>
-                        <option value="massage">Massage</option>
+                        <option value="Hair Styling">Hair Styling</option>
+                        <option value="Pedicure">Pedicure</option>
+                        <option value="Manicure">Manicure</option>
+                        <option value="Massage">Massage</option>
                     </select><br /><br />
 
                     <textarea
